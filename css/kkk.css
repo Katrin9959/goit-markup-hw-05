@@ -72,3 +72,38 @@ transform: translateX(-100%);
     letter-spacing:0.03em ;
     line-height: 30px;
 }
+
+
+
+
+.backdrop {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 1024px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity:1;
+    visibility: visible;
+    
+}
+.backdrop.is-hidden{
+    opacity: 0;
+visibility: hidden;
+    pointer-events: none;
+
+}
+.modal{
+ position: fixed;
+    min-height:581px; 
+    width: 528px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    transition: transform 250ms liniar;
+    padding: 40px;
+}
