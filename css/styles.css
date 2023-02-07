@@ -855,7 +855,7 @@ visibility: hidden;
     background-color: #fff;
     position: relative;
     
-    transform: translate(-50%, -50%);
+   
     border-radius: 4px;
     transition: transform 250ms liniar;
     padding: 40px;
