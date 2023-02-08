@@ -839,12 +839,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
   visibility:visible;
+  
 }
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+.is-hidden .modal{
+animation: none;
 }
 .modal {
     min-height:581px; 
@@ -853,9 +857,25 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     
     border-radius: 4px;
-    transition: transform 250ms liniar;
+  
     padding: 40px;
-    transform: scale(1.5);
+    animation:  zoom 750ms linear forwards;
+
+}
+
+
+@keyframes zoom { 
+    0%{
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+
 }
 
 .modal-title{
