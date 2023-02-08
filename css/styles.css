@@ -866,9 +866,7 @@ line-height: calc(23 / 20);
   display: block;
 }
 
-.backdrop.is-hidden .modal{
-    opacity: 0.3;
-}
+
 
 .modal-label{
     position:relative;
